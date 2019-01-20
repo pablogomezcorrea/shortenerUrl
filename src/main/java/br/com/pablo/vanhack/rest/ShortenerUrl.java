@@ -45,7 +45,7 @@ public class ShortenerUrl {
 			md.update(url.getBytes());
 			su.setUrlMin(urlMin);
 			su.setHash(convertToHex(md.digest()));
-			urlMin = su.getHash().substring(0, 5+1);
+			urlMin = su.getHash().substring(0, 5+1); 
 			
 			if ((urlMin != null) && urlMin.length() > 5) {
 				mp.addAttribute("urlOri", su.getUrl());
